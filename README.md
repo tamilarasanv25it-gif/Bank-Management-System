@@ -23,5 +23,3 @@ gcc bank.c -o bank
 Run:
 .\bank.exe
 
-## Author
-Tamilarasan
