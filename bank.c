@@ -137,6 +137,7 @@ void searchRecord() {
 }
 int main() {
     int choice;
+
     while (1) {
         printf("\n===== BANK MENU =====\n");
         printf("1. Insert\n");
@@ -147,14 +148,21 @@ int main() {
         printf("6. Exit\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
+
         switch (choice) {
             case 1: insertRecord(); break;
             case 2: displayRecords(); break;
             case 3: updateRecord(); break;
             case 4: deleteRecord(); break;
             case 5: searchRecord(); break;
-            case 6: printf("Exiting...\n"); exit(0);
-            default: printf("Invalid choice!\n");
+            case 6:
+                printf("Exiting...\n");
+                exit(0);
+            default:
+                printf("Invalid choice!\n");
         }
     }
+
     return 0;
+
+
